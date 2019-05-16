@@ -1,0 +1,13 @@
+each_char,18
+string_read,18
+single_character,25
+each_line,31
+single_char,37
+string_builder,82
+string_manager,82
+list_clump,87
+list_clip,89
+string_decrementer,230
+Char,85
+Character,87
+Converter,558
