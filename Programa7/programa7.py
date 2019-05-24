@@ -85,4 +85,5 @@ def main():
     rxy = calcR(len(x),somatorio(x),somatorio(y),somatoriaQuadrado(x),somatoriaQuadrado(y),somatoriaProduto(x,y))
     xCalc = valorX(len(x),rxy)
 
+
 main()
