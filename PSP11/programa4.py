@@ -1,12 +1,27 @@
+'''
+ Universidade Tecnológica Federal do Paraná
+ Aluno: Clodoaldo A. Basaglia da Fonseca
+ RA: 968692
+ Engenharia de Software 2
+'''
 import sys, math
 import numpy as np
 
+'''
+IN: String com o caminho até o arquivo com valores
+Recebe o caminho do arquivo, faz um split na quebra de linha e devolve um vetor
+de valores
+OUT: Vetor de valores
+'''
 def abrirArquivo(caminho):
     file = open(caminho, "r")
     conteudo = file.read()
     conteudo = conteudo.split('\n')
     return conteudo
 
+'''
+
+'''
 def getNomesValores(conteudo):
     nomes = []
     valores = []
@@ -17,6 +32,10 @@ def getNomesValores(conteudo):
             valores.append(int(aux[1]))
     return nomes,valores
 
+'''
+IN: valores
+somatorio dos logaritmos de todos os valores
+'''
 def somatoriaLn(valores):
     som = 0
     for i in valores:

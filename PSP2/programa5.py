@@ -1,22 +1,48 @@
+'''
+ Universidade Tecnológica Federal do Paraná
+ Aluno: Clodoaldo A. Basaglia da Fonseca
+ RA: 968692
+ Engenharia de Software 2
+'''
 import sys, math
 import numpy as np
 
+
+
+'''
+IN: String com o caminho até o arquivo com valores
+Recebe o caminho do arquivo, faz um split na quebra de linha e devolve um vetor
+de valores
+OUT: Vetor de valores
+'''
 def abrirArquivo(caminho):
     file = open(caminho, "r")
     conteudo = file.read()
     conteudo = conteudo.split('\n')
     return conteudo
 
+'''
+IN: conteudo
+retorna os valores do intervalo x min e x max
+'''
 def intervalo(conteudo):
     intervalo=[]
     aux = conteudo.split(',')
     intervalo = aux[0].split(' ')
     return float(intervalo[0]),float(intervalo[len(intervalo)-1])
 
+
+'''
+IN: conteudo
+retorna o something de liberdade
+'''
 def degreesOfFreedom(conteudo):
     aux = conteudo.split(',')
     return int(aux[1])
 
+'''In: uma String
+retorna o resultado esperados
+'''
 def pEsperado(conteudo):
     aux = conteudo.split(',')
     return float(aux[2])

@@ -1,5 +1,16 @@
+'''
+ Universidade Tecnológica Federal do Paraná
+ Aluno: Clodoaldo A. Basaglia da Fonseca
+ RA: 968692
+ Engenharia de Software 2
+'''
 import sys,math
 
+'''
+IN: vetor de valores
+Calcula o valor da média
+OUT: media
+'''
 def calcMedia(valores):
     n = len(valores)
     soma = 0
@@ -7,6 +18,11 @@ def calcMedia(valores):
         soma = soma + i
     return soma/n
 
+'''
+IN: vetor de valores, media
+Calcula o desvio padrão
+OUT: saida
+'''
 def desvioPadrao(valores,media):
     saida = 0
     for i in valores:
@@ -14,6 +30,12 @@ def desvioPadrao(valores,media):
     saida = saida/len(valores)
     return math.sqrt(saida)
 
+'''
+IN: String com o caminho até o arquivo com valores
+Recebe o caminho do arquivo, faz um split na quebra de linha e devolve um vetor
+de valores
+OUT: Vetor de valores
+'''
 def abrirArquivo(caminho):
     file = open(caminho, "r")
     conteudo = file.read()

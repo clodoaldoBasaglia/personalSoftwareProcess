@@ -1,3 +1,9 @@
+'''
+ Universidade Tecnológica Federal do Paraná
+ Aluno: Clodoaldo A. Basaglia da Fonseca
+ RA: 968692
+ Engenharia de Software 2
+'''
 import sys, math
 import numpy as np
 

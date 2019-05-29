@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-
-''' Universidade Tecnológica Federal do Paraná - CM
-    Engenharia de Software 02
-    Renan Kodama Rodrigues 1602098
 '''
-
+ Universidade Tecnológica Federal do Paraná
+ Aluno: Clodoaldo A. Basaglia da Fonseca
+ RA: 968692
+ Engenharia de Software 2
+'''
 import math
 
 
