@@ -78,21 +78,39 @@ def calcR(n,somatorioX,somatorioY,xQuadrado,yQuadrado,produtoXeY):
     ptBaixo = (((n*xQuadrado)-(somatorioX**2))-((n*yQuadrado)-(somatorioY**2)))
     return ptCima/ptBaixo
 
-
+'''
+IN: produtoXeY - valores de X multiplicados por Y
+    n - numero de entradas
+    xAvarage - media dos valores de X
+    yAvarage - media dos valores de Y
+    xQuadrado - somatoria dos valores de X elevado ao quadrado
+'''
 def calcBeta1(produtoXeY,n,xAvarage,yAvarage,xQuadrado):
     beta1 = 0
     beta1 = (produtoXeY-(n*xAvarage*yAvarage))/(xQuadrado-(n*xAvarage**2))
     return beta1
 
+'''
+IN:yAvarage - media dos valores de Y
+    xAvarage - media dos valores de X
+'''
 def calcBeta0(yAvarage,beta1,xAvarage):
     return (yAvarage-(beta1*xAvarage))
 
+'''
+IN: vetor com valores
+OUT: somatoria dos logaritmos dos valores
+'''
 def somatoriaLn(valores):
     som = 0
     for i in valores:
         som = som + np.log(i)
     return som
 
+'''
+IN: soma dos logaritmos dos valores e a quantidade
+OUT: media dos valores
+'''
 def mediaLn(sumLn,n):
     return sumLn/n
 
@@ -125,6 +143,8 @@ def somatorioSimples(x):
     for i in x:
         somatorio += i
     return somatorio
+
+
 def somatorioValAvg(x,avg):
     som = 0
     for i in x:
